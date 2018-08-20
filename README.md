@@ -27,7 +27,7 @@ Solution in the solution branch.
 2. Add express to the local project using `npm`. Use the `save` option so that NPM automatically adds express to your dependencies in `package.json`.
 
   ```bash
-  npm install express --save
+  npm install express 
   ```
 
   Notice that a new folder called `node_modules` was created. Open it up and you'll see that there is an `express` folder. `node_modules` is where the dependencies in `package.json` are downloaded to.  If you look at `package.json` again, you'll see express has been added as a dependency for this project.
@@ -130,7 +130,7 @@ At this point, `server.js` and our client-side files (`index.html`, `app.js`, an
 
   ```
   ├── server.js  // your server code
-  ├── package.json    // project info and dependencies; changed by npm init or npm install --save somePackage
+  ├── package.json    // project info and dependencies; changed by npm init or npm install somePackage
   ├── public  // i.e. client-side
   │   ├── images  // images to serve to client
   │   ├── scripts  // or js
