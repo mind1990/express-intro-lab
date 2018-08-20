@@ -94,6 +94,12 @@ Solution in the solution branch.
 1. Let's get this working with our index page now.  In your browser, open `index.html` and then open the javascript console.  You should see 'Sanity Check: JS is working!'  Try running the following AJAX request in the JavaScript console:
 
   ```js
+  
+  const handleSuccess = json =>  console.log(json);
+
+  const handleError = (xhr, status, errorThrown) => console.log('uh oh');
+
+  
   $.ajax({
      method: 'GET',
      url: 'http://localhost:3000/api/albums',
@@ -101,9 +107,6 @@ Solution in the solution branch.
      error: handleError
    });
 
-   const handleSuccess = json =>  console.log(json);
-
-   const handleError = (xhr, status, errorThrown) => console.log('uh oh');
 
   ```
   > Note: you must be on a page with jQuery in order to use .ajax in the browser console!  Fortunately, the included index.js does have jQuery.
